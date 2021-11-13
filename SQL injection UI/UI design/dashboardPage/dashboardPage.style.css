@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+.header{
+    background-color: rgb(235, 232, 232);
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header p{
+    font-size: 2rem;
+
+}
+.main{
+    background-color: rgb(235, 232, 232);
+    margin-top: 4rem;
+    margin-left: 35vw;
+    padding: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main button{
+    margin: 0.5rem;
+    width: 15rem;
+    margin-left: 5.5rem;
+}

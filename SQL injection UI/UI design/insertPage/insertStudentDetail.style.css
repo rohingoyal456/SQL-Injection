@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.header{
+    background-color: rgb(235, 232, 232);
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header p{
+    font-size: 2rem;
+
+}
+.main{
+    margin-top: 1.9rem;
+    background-color: rgb(235, 232, 232);
+    width: 60rem;
+    padding: 1rem 14rem;
+    margin-left: 17rem;
+}
+.content{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
