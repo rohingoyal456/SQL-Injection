@@ -58,19 +58,20 @@ $db=mysqli_select_db($conn,'login_Credentials');
 
 // sql injection attack code
 
-// $uname = $_GET['uname'];
-// $pass = $_GET['pass'];
+$uname = $_GET['uname'];
+$pass = $_GET['pass'];
 
-// $sql = "SELECT * FROM login_details WHERE username = '$uname' AND Pass = '$pass'";
-// $result = mysqli_query($conn, $sql);
-// $check = mysqli_fetch_array($result);
+$sql = "SELECT * FROM login_details WHERE username = '$uname' AND Pass = '$pass'";
+$result = mysqli_query($conn, $sql);
+$check = mysqli_fetch_array($result);
 
-// if(isset($check)){
-// 	echo '<h1>Connection is successful</h1>';
-// }
-// else {
-// 	echo '<h1>Connection failed.</h1><p>Wrong user credentials</p>';
-// }
+if(isset($check)){
+ header("Location:http://localhost/sql-injection-manav/SQL%20injection%20UI/UI%20design/dashboardPage/dashboardPage.html");
+}
+else {
+	echo '<h1>Connection failed.</h1><p>Wrong user credentials</p>';
+}
+
 
 
 
@@ -84,11 +85,12 @@ $db=mysqli_select_db($conn,'login_Credentials');
 // $check = mysqli_fetch_array($result);
 
 // if(isset($check)){
-// 	echo '<h1>Connection is successful</h1>';
+// 	header("Location:http://localhost/sql-injection-manav/SQL%20injection%20UI/UI%20design/dashboardPage/dashboardPage.html");
 // }
 // else {
 // 	echo '<h1>Connection failed.</h1><p>Wrong user credentials</p>';
 // }
+
 
 
 
@@ -105,13 +107,13 @@ $db=mysqli_select_db($conn,'login_Credentials');
 // $check = $result -> fetch_assoc();
 
 // if(isset($check)){
-// 	echo '<h1>Connection is successful</h1>';
+// 	header("Location:http://localhost/sql-injection-manav/SQL%20injection%20UI/UI%20design/dashboardPage/dashboardPage.html");
 // }
 // else {
 // 	echo '<h1>Connection failed.</h1><p>Wrong user credentials</p>';
 // }
 
-header("Location:http://localhost/sql-injection-manav/SQL%20injection%20UI/UI%20design/dashboardPage/dashboardPage.html")
+
 
 
 ?>

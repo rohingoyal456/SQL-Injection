@@ -13,18 +13,14 @@ body{
 
 }
 .main{
-    background-color: rgb(235, 232, 232);
-    width: 40rem;
-    height: 10rem;
-    margin: 3rem 27rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1.9rem;
+    background-color: rgb(181, 0, 0);
+    width: 60rem;
+    padding: 1rem 14rem;
+    margin-left: 17rem;
 }
-.search-container{
-    display: flex;
-    margin: 1rem;
-}
-.search-container>*{
-    margin: 1rem;
+.content{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
 }

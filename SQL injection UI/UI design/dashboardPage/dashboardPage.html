@@ -13,18 +13,21 @@
         <div class="header-content"><p>WELCOME TO ADMIN DASHBOARD</p></div>
         <div class="logout-button"><button type="button" onclick="location.href='http://localhost/sql-injection-manav/SQL-Injection-main/'"class="btn btn-success">Logout</button></div>
     </div>
-    <form class="main" method="get" action="dashboardPageInsert.php">
-        <div class="insert"><button type="submit" name="insert" value="insert"class="btn btn-primary">INSERT STUDENT DETAIL</button></div>
-    </form>
+    <div class="main">
+        <form  method="get" action="dashboardPageInsert.php">
+            <div class="insert"><button type="submit" name="insert" value="insert"class="btn btn-primary">INSERT STUDENT DETAIL</button></div>
+        </form>
+        
+        <form action="dashboardPageUpdate.php" method="get">
+            <div class="update"><button type="submit" name="update" value="update" class="btn btn-primary">UPDATE STUDENT DETAIL</button></div>
+        </form>
     
-    <form action="dashboardPageUpdate.php" class="main" method="get">
-        <div class="update"><button type="submit" name="update" value="update" class="btn btn-primary">UPDATE STUDENT DETAIL</button></div>
-    </form>
-
-    <form action="dashboardPageDelete.php" class="main" method="get">
-        <div class="delete"><button type="submit" name="delete" value="delete"class="btn btn-primary">DELETE STUDENT DETAIL</button></div> 
-
-    </form>
+        <form action="dashboardPageDelete.php" method="get">
+            <div class="delete"><button type="submit" name="delete" value="delete"class="btn btn-primary">DELETE STUDENT DETAIL</button></div> 
+    
+        </form>
+    </div>
+    
 
 </body>
 
